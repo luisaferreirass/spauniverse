@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    font-size: 62.5%;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: hsl(210, 100%, 7%);
+    overflow-y: hidden;
+  
+}
+#app{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    margin-top: -4rem;
+}
+
+
+
+ul{
+    display: flex;
+    gap: 3.2rem;
+    margin-top: 4rem;
+    margin-left: 7.2rem;
+    align-items: center;
+    
+    
+}
+ul a{
+    text-decoration: none;
+    font-size: 2.2rem;
+    padding: 0 1rem;
+    color: #C4C4CC;
+}
+
+
+
+/*Página do home*/
+
+
+.textoDoHome{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center;
+}
+.textoDoHome h1{
+    font-weight: bold;
+    font-size: 4.8rem;
+      color: #E1E1E6;
+}
+
+.textoDoHome a{
+    border: 2px solid white;
+    background: none;
+    color: white;
+    padding: 1.2rem 3.2rem;
+    width: max-content;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;;
+cursor: pointer;
+text-decoration: none;
+    color: #E1E1E6;
+}
+
+/*Página do universo e da exploração*/
+
+ .textoDoUniverso, 
+ .textoDoExploracao{
+    color: #E1E1E6;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 18.5rem;
+    left: 10rem
+
+
+}
+
+.textoDoUniverso h1, .textoDoExploracao h1{
+font-weight: bold;
+font-size: 4.8rem;
+margin-bottom: 1.6rem;
+}
+
+/*Backgrounds e ajustes específicos*/
+
+
+html.home body{
+    background-image: url(images/mountains-universe-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+html.universe body{
+    background-image: url(images/mountains-universe02.png);
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+html.exploration body{
+    background-image: url(images/mountains-universe-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+html.home #homepage,
+html.universe #universepage,
+html.exploration #explorationpage{
+    font-weight: bold;
+    color: white;
+}
+
+/*Página do erro*/
+
+.textoDoErro{
+    color: #E1E1E6;
+    font-size: 3.6rem;
+}
